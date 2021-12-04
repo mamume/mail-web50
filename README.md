@@ -36,7 +36,8 @@ python manage.py runserver
      - An additional `div` will be added to `inbox.html` (in addition to `emails-view` and `compose-view`) for displaying the email. The code will be updated to hide and show the right views when navigation options are clicked.
      - Once the email has been clicked on, The email will be marked as read. A `PUT` request is sent to `/emails/<email_id>` to update whether an email is read or not.
    - **Archive and Unarchive**: Allow users to archive and unarchive emails that they have received.
-      - When viewing an Inbox email, the user will be presented with a button that lets them archive the email. When viewing an Archive email, the user will be presented with a button that lets them unarchive the email. This requirement does not apply to emails in the Sent mailbox.
+      - When viewing an Inbox email, the user will be presented with a button that lets them archive the email. 
+      - When viewing an Archive email, the user will be presented with a button that lets them unarchive the email. This requirement does not apply to emails in the Sent mailbox.
       - A `PUT` request is sent to `/emails/<email_id>` to mark an email as archived or unarchived.
       - Once an email has been archived or unarchived, the user’s inbox will be loaded.
    - **Reply**: Allow users to reply to an email.
